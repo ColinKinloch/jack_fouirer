@@ -7,7 +7,7 @@ Extremely unpolished!
 
 ![Screenshot](./jack_fourier.png)
 
-# Installation
+# Compiling and running
 
 You need a fairly new rustc & cargo to build this app. To build, simply run:
 
@@ -15,7 +15,13 @@ You need a fairly new rustc & cargo to build this app. To build, simply run:
 $ cargo build
 ```
 
-If you don't have a recent enough versions installed, you might get the following error:
+And then to start it:
+
+```sh
+$ cargo run
+```
+
+If you don't have a recent enough versions installed, you might get the following error during the build:
 
 ```sh
 error: use of unstable library feature 'thread_local_state': state querying was recently added (see issue #27716)
@@ -31,4 +37,4 @@ warning: build failed, waiting for other jobs to finish...
 error: build failed
 ```
 
-In that case one way to fix the problem is to uninstall the cargo & rustc you have and deploy a recent version with the help of https://rustup.rs/ and then retry the installation command above.
+In that case one way to fix the problem is to uninstall the cargo & rustc you have and deploy a more recent version with the help of e.g. https://rustup.rs/ and then retry the installation command above.
